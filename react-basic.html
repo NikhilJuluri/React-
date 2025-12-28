@@ -25,6 +25,35 @@
       let day = dayjs().format("MMMM D");
         console.log(day);  
      
+     function Hello(){
+       return( 
+         <>
+        <p>Hello welcome,To my website</p>
+        <div> 
+        <input placeholder ="Email"/>
+        </div>
+        <input placeholder = "password" type="password"/>
+
+        <div> 
+          <button>Login</button>
+          <button>SignUp</button>
+        </div>
+        </>
+         );
+     }
+     
+     
+     function LoginForm(){
+       return( 
+         <> 
+        <input placeholder="Email"/>
+        <div>
+        <input placeholder = "password" type="password"/>
+        </div>
+           <button>Login</button>
+        </>
+      );
+     }
         
       
       const div = ( 
@@ -37,12 +66,19 @@
     </div> 
     
     );
+      
       const container = document.querySelector('.js-container'); 
+      /*
     let root = ReactDOM.createRoot(container);
-       setInterval(()=>{ 
+       setInterval(()=>{  
          let time = dayjs().format("HH:mm:ss")
-    root.render(<p>{time}</p>);
-       },1000);
+    root.render(<p>{time}</p>); 
+       },1000);  
+       */  
+     
+ ReactDOM.createRoot(container).render(<LoginForm/>)
+       
+       
       </script>
     </script>
   </body>
